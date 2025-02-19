@@ -1,17 +1,17 @@
-Fitter Status : Successful - Mon Feb 17 01:57:07 2025
+Fitter Status : Successful - Wed Feb 19 23:39:28 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : SuperScalar
 Top-level Entity Name : processor
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 10,030 / 49,760 ( 20 % )
-    Total combinational functions : 9,954 / 49,760 ( 20 % )
-    Dedicated logic registers : 2,663 / 49,760 ( 5 % )
-Total registers : 2663
-Total pins : 14 / 360 ( 4 % )
+Total logic elements : 9,607 / 49,760 ( 19 % )
+    Total combinational functions : 9,534 / 49,760 ( 19 % )
+    Dedicated logic registers : 2,507 / 49,760 ( 5 % )
+Total registers : 2507
+Total pins : 12 / 360 ( 3 % )
 Total virtual pins : 0
-Total memory bits : 131,072 / 1,677,312 ( 8 % )
+Total memory bits : 81,920 / 1,677,312 ( 5 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 UFM blocks : 0 / 1 ( 0 % )

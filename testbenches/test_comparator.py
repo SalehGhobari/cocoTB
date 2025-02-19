@@ -18,10 +18,10 @@ async def test_comparator(dut):
         )
 
     # Random test cases
-    num_random_tests = 100  # Number of random test cases to generate
+    num_random_tests = 200000  # Number of random test cases to generate
     for _ in range(num_random_tests):
-        a = random.randint(0, 2**32 - 1)  # Random 32-bit value for a
-        b = random.randint(0, 2**32 - 1)  # Random 32-bit value for b
+        a = random.randint(-2**31, 2**31 - 1)  # Random 32-bit value for a
+        b = random.randint(-2**31, 2**31 - 1)  # Random 32-bit value for b
         expected_equal = 1 if a == b else 0  # Expected output
         await test_case(a, b, expected_equal)
 

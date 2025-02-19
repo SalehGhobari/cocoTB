@@ -1,21 +1,21 @@
 module BranchPredictionUnit (
     clk, reset, branch1, branch2, branch_taken1, branch_taken2,
     pc1, pc2, pcM1, pcM2, targetM1, targetM2, prediction1, prediction2, 
-    nextPC, instMemPred, predictedTarget1, predictedTarget2, instMemTarget
+    nextPC, instMemPred, predictedTarget1, instMemTarget
 );
     // Inputs
     input clk, reset;
     input branch1, branch2;            // Branch signals for the two instructions
     input branch_taken1, branch_taken2; // Whether the branches were taken or not
-    input [10:0] pc1, pc2;            // Program counters for the two instructions
-    input [10:0] pcM1, pcM2;          // Program counters for the two instructions in Memory stage
-    input [10:0] nextPC;
-    input [10:0] targetM1, targetM2;   // Actual branch targets from Memory stage
+    input [8:0] pc1, pc2;            // Program counters for the two instructions
+    input [8:0] pcM1, pcM2;          // Program counters for the two instructions in Memory stage
+    input [8:0] nextPC;
+    input [8:0] targetM1, targetM2;   // Actual branch targets from Memory stage
 
     // Outputs
     output reg prediction1, prediction2, instMemPred;           // Predictions for the two branches
-    output reg [10:0] predictedTarget1, predictedTarget2;      // Predicted target addresses
-    output reg [10:0] instMemTarget;         // Predicted target for instruction memory
+    output reg [8:0] predictedTarget1;      // Predicted target addresses
+    output reg [8:0] instMemTarget;         // Predicted target for instruction memory
 
     // Branch History Table (BHT)
     reg [1:0] BHT [0:63]; // 32-entry BHT, 2-bit saturating counters
@@ -55,8 +55,6 @@ module BranchPredictionUnit (
             default: prediction2 = 1'b0;
         endcase
         
-        // BTB target prediction for second branch
-        predictedTarget2 = BTB_valid[index2] ? BTB_target[index2] : pc2 + 11'd1;
     end
 
     // Prediction logic for instruction memory

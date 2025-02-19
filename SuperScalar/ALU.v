@@ -1,4 +1,4 @@
-module ALU (operand1, operand2, shamt, opSel, result, overflow);
+module ALU (operand1, operand2, shamt, opSel, result);
 	
 	parameter data_width = 32;
 	parameter sel_width = 4;
@@ -13,7 +13,6 @@ module ALU (operand1, operand2, shamt, opSel, result, overflow);
 	// .......
 	
 	output reg [data_width - 1 : 0] result;
-	output reg overflow;
 	// Operation Parameters
 	// ....................
 	parameter   _ADD  = 'b0000, _SUB  = 'b0001, _AND = 'b0010,
@@ -28,15 +27,14 @@ module ALU (operand1, operand2, shamt, opSel, result, overflow);
 	always @ (*) begin
 	
 			result = 32'b0;
-			overflow = 0;
 		case(opSel)
 			
 			_ADD: begin
-				{overflow, result} = operand1 + operand2;
+				result = operand1 + operand2;
 			end
 			
 			_SUB: begin
-				{overflow, result} = operand1 - operand2;
+				result = operand1 - operand2;
 			end
 			
 			_AND: begin

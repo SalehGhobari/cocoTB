@@ -1,6 +1,10 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1739931800" />
-    <testcase name="test_signextender" classname="test_signextender" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_signextender.py" lineno="6" time="0.15033507347106934" sim_time_ns="1004.001" ratio_time="6678.421587316489" />
+    <property name="random_seed" value="1740002623" />
+    <testcase name="test_basic_operation" classname="test_mux2x1en" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_mux2x1en.py" lineno="23" time="0.0031256675720214844" sim_time_ns="8.001" ratio_time="2559.773173455377" />
+    <testcase name="test_enable_behavior" classname="test_mux2x1en" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_mux2x1en.py" lineno="39" time="0.0011718273162841797" sim_time_ns="18.000999999999998" ratio_time="15361.478393489317" />
+    <testcase name="test_random_values" classname="test_mux2x1en" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_mux2x1en.py" lineno="105" time="0.005157470703125" sim_time_ns="40.001000000000005" ratio_time="7755.93353846154" />
+    <testcase name="test_timing_behavior" classname="test_mux2x1en" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_mux2x1en.py" lineno="120" time="0.02214670181274414" sim_time_ns="30.001000000000005" ratio_time="1354.6486629777157" />
+    <testcase name="test_edge_cases" classname="test_mux2x1en" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_mux2x1en.py" lineno="136" time="0.0008463859558105469" sim_time_ns="12.00099999999999" ratio_time="14179.110508169002" />
   </testsuite>
 </testsuites>

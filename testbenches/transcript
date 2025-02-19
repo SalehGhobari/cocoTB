@@ -6,12 +6,14 @@
 # vmap work sim_build/work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:23:19 on Feb 19,2025
-# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem_bb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v 
+# Start time: 01:03:41 on Feb 20,2025
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/reorder_buffer.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/testbench.v 
 # -- Compiling module ALU
 # -- Compiling module ANDGate
 # -- Compiling module AND3Gate
+# -- Compiling module AdderIP
 # -- Compiling module BranchPredictionUnit
+# -- Compiling module BranchPredictionUnitOld
 # -- Compiling module Comparator
 # -- Compiling module ComparatorIP
 # -- Compiling module HazardDetectionUnit
@@ -25,8 +27,6 @@
 # ** Warning: C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v(46): (vlog-2643) Unterminated string literal continues onto next line.
 # -- Compiling module dual_issue_data_memory
 # -- Compiling module dual_issue_inst_mem
-# ** Warning: C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem_bb.v(35): (vlog-2275) Existing module 'dual_issue_inst_mem' will be overwritten.
-# -- Compiling module dual_issue_inst_mem
 # -- Compiling module ForwardingUnit
 # -- Compiling module mux2x1
 # -- Compiling module mux2x1En
@@ -36,21 +36,28 @@
 # -- Compiling module processor
 # -- Compiling module programCounter
 # -- Compiling module registerFile
+# -- Compiling module registerFile_tb
+# -- Compiling module reorder_buffer
 # -- Compiling module signextender
+# -- Compiling module testbench
 # 
 # Top level modules:
 # 	AND3Gate
+# 	AdderIP
+# 	BranchPredictionUnitOld
 # 	Comparator
 # 	controlUnit_tb
-# 	processor
-# End time: 05:23:19 on Feb 19,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# vsim -voptargs="+acc" -L work -L lpm_ver -L altera_mf_ver -onfinish exit -pli "C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" work.signextender 
-# Start time: 05:23:19 on Feb 19,2025
+# 	registerFile_tb
+# 	reorder_buffer
+# 	testbench
+# End time: 01:03:41 on Feb 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" -L work -L lpm_ver -L altera_mf_ver -onfinish exit -pli "C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" work.mux2x1En 
+# Start time: 01:03:41 on Feb 20,2025
 # Loading sv_std.std
-# Loading work.signextender
+# Loading work.mux2x1En
 # Loading C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll
 # ** Note: $finish
-#    Time: 1004001 ps  Iteration: 0  Instance: /signextender
-# End time: 05:23:20 on Feb 19,2025, Elapsed time: 0:00:01
+#    Time: 108005 ps  Iteration: 0  Instance: /mux2x1En
+# End time: 01:03:43 on Feb 20,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

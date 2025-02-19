@@ -29,7 +29,7 @@ module HazardDetectionUnit (
     always @(*) begin
         Stall11 = 0;
         Stall21 = 0;
-		  Stall12 = 0;
+		Stall12 = 0;
         Stall22 = 0;
 
         // Stall logic for the first instruction

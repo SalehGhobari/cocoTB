@@ -25,8 +25,8 @@ module registerFile (
         if (~rst) begin
             for (i = 0; i < 32; i = i + 1) registers[i] = 0;
         end else begin
-            if (we1 && writeRegister1 != 0) registers[writeRegister1] <= writeData1;
-            if (we2 && writeRegister2 != 0 && writeRegister2 != writeRegister1) 
+            if (we1 && writeRegister1 != 0 && writeRegister2 != writeRegister1) registers[writeRegister1] <= writeData1;
+            if (we2 && writeRegister2 != 0 ) 
                 registers[writeRegister2] <= writeData2;
         end
     end
