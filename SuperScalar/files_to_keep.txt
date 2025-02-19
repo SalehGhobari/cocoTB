@@ -1,0 +1,69 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 6442-FE0E
+
+ Directory of C:\Users\Saleh\Desktop\cocoTBWindows\SuperScalar
+
+02/19/2025  04:01 AM    <DIR>          .
+02/19/2025  03:29 AM    <DIR>          ..
+02/18/2025  07:27 PM               262 adder.v
+02/18/2025  07:27 PM               261 adder.v.bak
+02/18/2025  07:27 PM             1,457 ALU.v
+02/18/2025  07:27 PM             1,550 ALU.v.bak
+02/18/2025  07:27 PM               230 ANDGate.v
+02/18/2025  07:27 PM               106 ANDGate.v.bak
+02/18/2025  07:27 PM            58,276 assignment_defaults.qdf
+02/18/2025  07:27 PM             5,018 BranchPredictionUnit.v
+02/18/2025  07:27 PM               202 Comparator.v
+02/18/2025  07:27 PM               453 ComparatorIP.qip
+02/18/2025  07:27 PM             4,261 ComparatorIP.v
+02/18/2025  07:27 PM             4,714 controlUnit.v
+02/18/2025  07:27 PM             4,697 controlUnit.v.bak
+02/18/2025  07:27 PM             3,663 controlUnit_tb.v
+02/19/2025  03:47 AM    <DIR>          db
+02/18/2025  07:27 PM               656 dual_issue_data_memory.mif
+02/18/2025  07:27 PM               483 dual_issue_data_memory.qip
+02/18/2025  07:27 PM            11,582 dual_issue_data_memory.v
+02/18/2025  07:27 PM               474 dual_issue_inst_mem.qip
+02/18/2025  07:27 PM            10,790 dual_issue_inst_mem.v
+02/18/2025  07:27 PM            10,310 dual_issue_inst_mem.v.bak
+02/18/2025  07:27 PM             1,393 dual_issue_inst_memory.mif
+02/18/2025  07:27 PM               749 dual_issue_inst_memory.mif.bak
+02/18/2025  07:27 PM             8,603 dual_issue_inst_mem_bb.v
+02/19/2025  04:00 AM               206 files
+02/19/2025  04:01 AM                 0 files_to_keep.txt
+02/18/2025  07:27 PM             4,077 forwardingUnit.v
+02/18/2025  07:27 PM               858 forwardingUnit.v.bak
+02/18/2025  10:09 PM    <DIR>          greybox_tmp
+02/18/2025  07:27 PM             2,802 HazardDetectionUnit.v
+02/18/2025  07:27 PM               628 HazardDetectionUnit.v.bak
+02/18/2025  10:09 PM    <DIR>          incremental_db
+02/18/2025  07:27 PM             1,435 muxes.v
+02/18/2025  07:27 PM               619 muxes.v.bak
+02/18/2025  07:27 PM               244 ORGate.v
+02/18/2025  07:27 PM               105 ORGate.v.bak
+02/18/2025  10:09 PM    <DIR>          output_files
+02/18/2025  07:27 PM             1,290 pcCorrection.v
+02/18/2025  07:27 PM               341 pcCorrection.v.bak
+02/18/2025  07:27 PM             1,256 Pipelined.qws
+02/18/2025  07:27 PM             4,426 Pipelined.restore.rpt
+02/18/2025  07:27 PM             3,907 Pipelined.sdc
+02/18/2025  07:27 PM               357 Pipes.v
+02/18/2025  07:27 PM               284 Pipes.v.bak
+02/19/2025  03:47 AM            17,800 processor.v
+02/18/2025  07:27 PM            12,598 processor.v.bak
+02/18/2025  07:27 PM               370 programCounter.v
+02/18/2025  07:27 PM               364 programCounter.v.bak
+02/18/2025  07:27 PM               202 qar_info.json
+02/18/2025  07:27 PM             1,294 registerFile.v
+02/18/2025  07:27 PM             1,294 registerFile.v.bak
+02/18/2025  07:27 PM               279 signextender.v
+02/18/2025  10:09 PM    <DIR>          simulation
+02/18/2025  07:27 PM             2,090 SingleCycle.qsf
+02/18/2025  07:27 PM             5,914 SuperScalar.qsf
+02/19/2025  03:47 AM               630 SuperScalar.qws
+02/18/2025  07:27 PM             3,909 SuperScalar.sdc
+02/18/2025  07:27 PM                59 SuperScalar_description.txt
+02/18/2025  07:27 PM             1,063 SuperScalar_nativelink_simulation.rpt
+02/18/2025  07:27 PM               111 XNOR.v
+              55 File(s)        201,002 bytes
+               7 Dir(s)  125,807,292,416 bytes free
