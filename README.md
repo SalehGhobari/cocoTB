@@ -1,2 +1,2 @@
 # JoSDC-2024-Verification-cocoTB-
-Verification of Verilog modules via cocoTB for JoSDC 2024 (The Plumbers Team)
+modules tested : ORGate4 ✅ ORGate ✅ adder ✅ ANDGate ✅ ANDGate3 ✅ Comparator ✅ programCounter ✅ ALU ✅ controlUnit ✅ Pipes ✅ XNOR ✅ mux2x1 ✅ mux3to1 ✅ mux3to1 ✅ mux5to1 ✅ registerFile ❌ mux2x1En ❌
