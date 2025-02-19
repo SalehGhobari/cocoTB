@@ -8,10 +8,10 @@ TOPLEVEL_LANG = verilog
 VERILOG_SOURCES += $(wildcard ../SuperScalar/*.v)
 
 # Specify the top-level module (must match the testbench)
-TOPLEVEL = mux2x1
+TOPLEVEL = signextender
 
 # The Python file containing Cocotb testbenches
-MODULE = test_mux2x1
+MODULE = test_signextender
 
 # Enable waveform dump for debugging
 export WAVES=1
