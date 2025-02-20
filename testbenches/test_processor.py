@@ -2,6 +2,11 @@ import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, Timer
 
+def to_int(X):
+    for x in range(len(X)):
+        X[x] = int(X[x])
+    return X
+
 @cocotb.test()
 async def processor_test(dut):
     """Testbench for the processor module."""
@@ -25,9 +30,11 @@ async def processor_test(dut):
     await RisingEdge(dut.clk)
     await Timer(1, units="ns")
 
-    for cycle in range(100):
+    for cycle in range(3300):
         await RisingEdge(dut.clk)
         await Timer(1, units="ns")
         cocotb.log.info(f"Cycle {cycle}: PC = {int(dut.PC.value)}")
         cocotb.log.info(f"Instruction 1 = {hex(dut.instMem.q_a.value)} \n")
-        cocotb.log.info(f"Instruction 2 = {hex(dut.instMem.q_b.value)} \n") 
+        cocotb.log.info(f"Instruction 2 = {hex(dut.instMem.q_b.value)} \n")
+        cocotb.log.info(f"Register File Contents = {to_int(dut.RegFile.registers.value)} \n")
+        cocotb.log.info(f"DM = {to_int(dut.DM.altsyncram_component.m_default.altsyncram_inst.mem_data.value[0:20])} \n")

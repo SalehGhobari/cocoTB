@@ -349,7 +349,7 @@ dual_issue_data_memory DM (
 	.data_a(ForwardBMuxOut1M),
 	.data_b(ForwardBMuxOut2M),
 	.rden_a(MemReadEn1M),
-	.rden_b(MemReadEn2M & ~MemReadEn1M),
+	.rden_b(MemReadEn2M),
 	.wren_a(MemWriteEn1M),
 	.wren_b(MemWriteEn2M & ~MemWriteEn1M),
 	.q_a(memoryReadData1),
