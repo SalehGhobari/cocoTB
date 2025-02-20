@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1740067367" />
-    <testcase name="processor_test" classname="test_processor" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_processor.py" lineno="5" time="0.5393757820129395" sim_time_ns="1001.001" ratio_time="1855.8508434774076" />
+    <property name="random_seed" value="1740085685" />
+    <testcase name="processor_test" classname="test_processor" file="C:\Users\Saleh\Desktop\cocoTB\testbenches\test_processor.py" lineno="5" time="0.41316652297973633" sim_time_ns="1011.001" ratio_time="2446.95768841268" />
   </testsuite>
 </testsuites>

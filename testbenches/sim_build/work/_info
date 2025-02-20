@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/Saleh/Desktop/cocoTB/testbenches
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1740067365
+Z2 !s110 1740085683
 !i10b 1
 !s100 M:=?KmLm3aPnQlT^njP9d0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1740067365.000000
+Z7 !s108 1740085683.000000
 !s107 C:/Users/Saleh/Desktop/cocoTB/SuperScalar/testbench.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/reorder_buffer.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|
 Z8 !s90 -work|work|+define+COCOTB_SIM|-sv|-timescale|1ns/1ps|-mfcu|+acc|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/reorder_buffer.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/testbench.v|
 !i113 1
@@ -439,7 +439,7 @@ R10
 R11
 vmux2x1En
 R1
-R2
+Z21 !s110 1740085684
 !i10b 1
 !s100 oF10D[;eDkCHj_XL@?F]c0
 R3
@@ -466,7 +466,7 @@ R11
 nmux2x1@en
 vmux3to1
 R1
-R2
+R21
 !i10b 1
 !s100 JA@TMDl`CY3I:JFSG^RBh0
 R3
@@ -492,7 +492,7 @@ R10
 R11
 vmux5to1
 R1
-R2
+R21
 !i10b 1
 !s100 QoZaz>oUUK65?EQ_F8Xk01
 R3
@@ -527,8 +527,8 @@ R4
 S1
 R0
 R12
-Z21 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
-Z22 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
+Z22 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
+Z23 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
 !i122 0
 R17
 R6
@@ -554,8 +554,8 @@ R4
 S1
 R0
 R12
-R21
 R22
+R23
 !i122 0
 R16
 R6
@@ -572,7 +572,7 @@ R11
 n@o@r@gate4
 vpcCorrection
 R1
-R2
+R21
 !i10b 1
 !s100 BOm8O7C8gO8IVVYT5E2TW1
 R3
@@ -625,7 +625,7 @@ R10
 R11
 vprocessor
 R1
-R2
+R21
 !i10b 1
 !s100 zbzH7aS0Te:3;C74KQjWR1
 R3
@@ -651,7 +651,7 @@ R10
 R11
 vprogramCounter
 R1
-R2
+R21
 !i10b 1
 !s100 fzjA46=c>JDUJf>BBi@PG1
 R3
@@ -678,7 +678,7 @@ R11
 nprogram@counter
 vregisterFile
 R1
-R2
+R21
 !i10b 1
 !s100 Rm6>UH`4938[[iGZha`MC0
 R3
@@ -705,7 +705,7 @@ R11
 nregister@file
 vregisterFile_tb
 R1
-R2
+R21
 !i10b 1
 !s100 H3M`ZBNcIn@lVWRX:1YA61
 R3
@@ -732,7 +732,7 @@ R11
 nregister@file_tb
 vreorder_buffer
 R1
-R2
+R21
 !i10b 1
 !s100 :99YZk0>B9MIY0nHH`:AK3
 R3
@@ -758,7 +758,7 @@ R10
 R11
 vsignextender
 R1
-R2
+R21
 !i10b 1
 !s100 @fFz@oeMUJA5M:;SY[D242
 R3
@@ -784,7 +784,7 @@ R10
 R11
 vtestbench
 R1
-R2
+R21
 !i10b 1
 !s100 N6z>DJdzObQU8SKl@K[Cl1
 R3
