@@ -6,7 +6,7 @@
 # vmap work sim_build/work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:03:41 on Feb 20,2025
+# Start time: 19:02:45 on Feb 20,2025
 # vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/reorder_buffer.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/testbench.v 
 # -- Compiling module ALU
 # -- Compiling module ANDGate
@@ -50,14 +50,43 @@
 # 	registerFile_tb
 # 	reorder_buffer
 # 	testbench
-# End time: 01:03:41 on Feb 20,2025, Elapsed time: 0:00:00
+# End time: 19:02:45 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vsim -voptargs="+acc" -L work -L lpm_ver -L altera_mf_ver -onfinish exit -pli "C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" work.mux2x1En 
-# Start time: 01:03:41 on Feb 20,2025
+# vsim -voptargs="+acc" -L work -L lpm_ver -L altera_mf_ver -onfinish exit -pli "C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" work.processor 
+# Start time: 19:02:45 on Feb 20,2025
 # Loading sv_std.std
+# Loading work.processor
+# Loading work.programCounter
+# Loading work.adder
 # Loading work.mux2x1En
+# Loading work.dual_issue_inst_mem
+# Loading altera_mf_ver.altsyncram
+# Loading work.BranchPredictionUnit
+# Loading work.pipe
+# Loading work.controlUnit
+# Loading work.mux2x1
+# Loading work.registerFile
+# Loading work.signextender
+# Loading work.HazardDetectionUnit
+# Loading work.ORGate
+# Loading work.ORGate4
+# Loading work.ANDGate
+# Loading work.mux3to1
+# Loading work.ForwardingUnit
+# Loading work.mux5to1
+# Loading work.ALU
+# Loading work.ComparatorIP
+# Loading lpm_ver.lpm_compare
+# Loading work.XNORGate
+# Loading work.pcCorrection
+# Loading work.dual_issue_data_memory
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll
-# ** Note: $finish
-#    Time: 108005 ps  Iteration: 0  Instance: /mux2x1En
-# End time: 01:03:43 on Feb 20,2025, Elapsed time: 0:00:02
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: processor.instMem.altsyncram_component.m_default.altsyncram_inst
+# ** Note: $finish    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(50185)
+#    Time: 1001001 ps  Iteration: 0  Instance: /processor
+# End time: 19:02:47 on Feb 20,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
