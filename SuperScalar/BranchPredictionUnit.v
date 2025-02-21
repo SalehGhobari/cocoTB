@@ -21,7 +21,7 @@ module BranchPredictionUnit (
     reg [1:0] BHT [0:63]; // 32-entry BHT, 2-bit saturating counters
 
     // Branch Target Buffer (BTB)
-    reg [10:0] BTB_target [0:63];  // 32-entry BTB storing target addresses
+    reg [8:0] BTB_target [0:63];  // 32-entry BTB storing target addresses
     reg BTB_valid [0:63];          // Valid bits for BTB entries
 
     // Indexes for accessing the BHT and BTB

@@ -79,7 +79,7 @@ async def processor_test(dut):
     total_cycles = 0
 
     cycle = 0
-    while True:
+    while cycle <= 200:
         await RisingEdge(dut.clk)
         await Timer(1, units="ns")
         total_cycles = cycle - max_nops + 1

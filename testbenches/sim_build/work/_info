@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/Saleh/Desktop/cocoTB/testbenches
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1740100556
+Z2 !s110 1740152919
 !i10b 1
 !s100 M:=?KmLm3aPnQlT^njP9d0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ I3TGYJzQ[D4`kkfboA0R@K1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1739997974
+Z5 w1740152626
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v
 !i122 0
@@ -28,40 +28,13 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1740100556.000000
-!s107 C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|
-Z8 !s90 -work|work|+define+COCOTB_SIM|-sv|-timescale|1ns/1ps|-mfcu|+acc|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|
+Z7 !s108 1740152918.000000
+!s107 C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|
+Z8 !s90 -work|work|+define+COCOTB_SIM|-sv|-timescale|1ns/1ps|-mfcu|+acc|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|
 !i113 1
 Z9 o-work work -sv -timescale 1ns/1ps -mfcu +acc
 Z10 !s92 -work work +define+COCOTB_SIM -sv -timescale 1ns/1ps -mfcu +acc
 Z11 tCvgOpt 0
-vAdderIP
-R1
-R2
-!i10b 1
-!s100 FHjzj:UFoML?NL?bjO;^T0
-R3
-I[zLY`LRa62<[IAYI]FEg50
-R4
-S1
-R0
-Z12 w1739997973
-8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v
-FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v
-!i122 0
-L0 40 37
-R6
-r1
-!s85 0
-31
-R7
-Z13 !s107 C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/AdderIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|
-R8
-!i113 1
-R9
-R10
-R11
-n@adder@i@p
 vALU
 R1
 R2
@@ -72,7 +45,7 @@ IHGBY>>z;0n<hY2dCMQcL_1
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v
 !i122 0
@@ -82,7 +55,7 @@ r1
 !s85 0
 31
 R7
-R13
+Z12 !s107 C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v|C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v|
 R8
 !i113 1
 R9
@@ -99,17 +72,17 @@ IOV71X0@0c6?B52fRZhXOO2
 R4
 S1
 R0
-R12
-Z14 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v
-Z15 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v
+R5
+Z13 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v
+Z14 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v
 !i122 0
-Z16 L0 9 7
+Z15 L0 9 7
 R6
 r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -126,17 +99,17 @@ I=EZ7AU[bL1:_ObjdUN4AO1
 R4
 S1
 R0
-R12
+R5
+R13
 R14
-R15
 !i122 0
-Z17 L0 1 7
+Z16 L0 1 7
 R6
 r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -147,13 +120,13 @@ vBranchPredictionUnit
 R1
 R2
 !i10b 1
-!s100 ]:^Fe>lR_V>^DVL05h8Te0
+!s100 5ioM8L;;lzXdMze8W=MGJ1
 R3
-I6YPVZ1b?iO^k[TW@n4[_E3
+IGf[b:=eW:M<dl4Jk[ZKG>3
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v
 !i122 0
@@ -163,51 +136,24 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
 R10
 R11
 n@branch@prediction@unit
-vBranchPredictionUnitOld
-R1
-R2
-!i10b 1
-!s100 1nY:zMM]2MH>]mfkVh6IK1
-R3
-I>bI9gSYMP<QJcG=jX212N1
-R4
-S1
-R0
-R12
-8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v
-FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnitOld.v
-!i122 0
-L0 1 90
-R6
-r1
-!s85 0
-31
-R7
-R13
-R8
-!i113 1
-R9
-R10
-R11
-n@branch@prediction@unit@old
 vComparator
 R1
 R2
 !i10b 1
-!s100 TcD;d2:9d9PBMOlGJL6IP1
+!s100 JheBNgDYa=b4o0Ee2Cf5P1
 R3
-IO@[MYn^FYjHn=?UXKF]9T3
+IdIF`hj[5e5Jfa9m;BQhD83
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v
 !i122 0
@@ -217,7 +163,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -234,7 +180,7 @@ IY0R:K9ZiaIC@FIPI>zBjI1
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v
 !i122 0
@@ -244,7 +190,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -271,47 +217,20 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
 R10
 R11
 ncontrol@unit
-vcontrolUnit_tb
-R1
-R2
-!i10b 1
-!s100 F3TZ__ASQ]<O<5M]?6CFn0
-R3
-IjQGgHSM<G7FReQHP^daQc1
-R4
-S1
-R0
-R5
-8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v
-FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit_tb.v
-!i122 0
-L0 1 92
-R6
-r1
-!s85 0
-31
-R7
-R13
-R8
-!i113 1
-R9
-R10
-R11
-ncontrol@unit_tb
 vdual_issue_data_memory
 R1
 R2
 !i10b 1
-!s100 J`>HE`h1Ul3dlbP8UKUa]2
+!s100 ]3H0Pa5?E10ZIRL=O7Z121
 R3
-I5z;L8?^DoDnIl9PF:<KFH0
+IUe1MhUem0?PXSELfk]=EK1
 R4
 S1
 R0
@@ -325,7 +244,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -351,7 +270,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -377,7 +296,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -394,7 +313,7 @@ I6zj<8VT3]YPXg9;=5F<C=0
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v
 !i122 0
@@ -404,7 +323,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -421,9 +340,9 @@ Ij7kWc4:gFjMj:<od4gIBG0
 R4
 S1
 R0
-Z18 w1739997975
-Z19 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v
-Z20 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v
+Z17 w1740152627
+Z18 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v
+Z19 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v
 !i122 0
 L0 1 13
 R6
@@ -431,7 +350,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -447,9 +366,9 @@ IDFmiNSaf5nIK`=UhF`PQC2
 R4
 S1
 R0
+R17
 R18
 R19
-R20
 !i122 0
 L0 15 19
 R6
@@ -457,7 +376,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -474,9 +393,9 @@ Ia41dJ8[f4ARe7KjGbe3k`2
 R4
 S1
 R0
+R17
 R18
 R19
-R20
 !i122 0
 L0 36 21
 R6
@@ -484,7 +403,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -500,9 +419,9 @@ IOM6D[H5fJdS?j2=ia7^=41
 R4
 S1
 R0
+R17
 R18
 R19
-R20
 !i122 0
 L0 58 25
 R6
@@ -510,7 +429,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -526,17 +445,17 @@ ISR^8KZGfAS^Sio2NUfhT;0
 R4
 S1
 R0
-R12
-Z21 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
-Z22 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
+R5
+Z20 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
+Z21 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v
 !i122 0
-R17
+R16
 R6
 r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -553,17 +472,17 @@ I]Z?PI9[_M`4[3?>a>R6TJ3
 R4
 S1
 R0
-R12
+R5
+R20
 R21
-R22
 !i122 0
-R16
+R15
 R6
 r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -580,7 +499,7 @@ I=eKf@@L_98G9<W]>7<aaF1
 R4
 S1
 R0
-R18
+R17
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v
 !i122 0
@@ -590,7 +509,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -607,7 +526,7 @@ I85Gkf2U[LE^@>g<RYFjXl1
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v
 !i122 0
@@ -617,7 +536,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -627,23 +546,23 @@ vprocessor
 R1
 R2
 !i10b 1
-!s100 ZnjV`z>dG84V4XaK04amC0
+!s100 RiJWcV_Mm>1A2?@:fol[g2
 R3
-I5XAeNoTd]<`5WiA`dAG2;0
+IYD`zjHS<bN:7IiRSdfJj<2
 R4
 S1
 R0
-w1740091087
+R17
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v
 !i122 0
-L0 1 416
+L0 1 408
 R6
 r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -659,7 +578,7 @@ I`hC:M2O_0?2hR2D3W?]110
 R4
 S1
 R0
-R18
+R17
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v
 !i122 0
@@ -669,7 +588,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -686,7 +605,7 @@ I4mQKM>KeH06CZKXgnF6<J3
 R4
 S1
 R0
-R18
+R17
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v
 !i122 0
@@ -696,40 +615,13 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
 R10
 R11
 nregister@file
-vregisterFile_tb
-R1
-R2
-!i10b 1
-!s100 H3M`ZBNcIn@lVWRX:1YA61
-R3
-Ic3lBmZlNzEM_d@alSHl=O1
-R4
-S1
-R0
-R18
-8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v
-FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile_tb.v
-!i122 0
-L0 1 45
-R6
-r1
-!s85 0
-31
-R7
-R13
-R8
-!i113 1
-R9
-R10
-R11
-nregister@file_tb
 vsignextender
 R1
 R2
@@ -740,7 +632,7 @@ IHlmB^Ha7]2?>33]abJJzf1
 R4
 S1
 R0
-R18
+R17
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v
 !i122 0
@@ -750,7 +642,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9
@@ -766,7 +658,7 @@ I<<GzEFXhRSniUh4`QOoE<2
 R4
 S1
 R0
-R12
+R5
 8C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v
 FC:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v
 !i122 0
@@ -776,7 +668,7 @@ r1
 !s85 0
 31
 R7
-R13
+R12
 R8
 !i113 1
 R9

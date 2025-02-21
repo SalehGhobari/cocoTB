@@ -169,10 +169,7 @@ always @(*) begin
         nextPC = BJPC;
 end
 
-
-
 programCounter pc(.clk(clk), .rst(rst), .enable(EnablePCIFID), .PCin(nextPC), .PCout(PC));
-
 
 adder #(9)	branchPcAdder(.in1(predictedTarget1),.in2(9'd1),.out(branchAdderPC));
 adder #(9) nextPcAdder(.in1(nextPC), .in2(9'd1), .out(nextPCP1));
@@ -181,8 +178,7 @@ adder #(9) pcAdder2(.in1(PC), .in2(9'd1), .out(PCPlus1));
 
 mux2x1En #(9) instMemMux(.in1(nextPCP1), .in2(instMemTarget), .s(instMemPred),.en(EnablePCIFID), .out(instMemMuxOut));
 
-dual_issue_inst_mem instMem(
-							.address_a(nextPC),
+dual_issue_inst_mem instMem(.address_a(nextPC),
 							.address_b(instMemMuxOut),
 							.addressstall_a(~EnablePCIFID),
 							.addressstall_b(~EnablePCIFID),
@@ -243,7 +239,7 @@ HazardDetectionUnit HDU(
 	 .FlushIFID1(FlushIFID1), .FlushEX(FlushEX),.FlushMEM2(FlushMEM2), .CPCSignal1(CPCSignal1), .CPCSignal2(CPCSignal2)
 );
 
-ORGate CPCGate(.in1(CPCSignal1), .in2(CPCSignal1), .out(CPCSig));
+ORGate CPCGate(.in1(CPCSignal1), .in2(CPCSignal2), .out(CPCSig));
 ORGate4 hold(.in1(Stall21), .in2(Stall22), .in3(Stall12), .in4(Stall11), .out(Stall));
 ANDGate holdGate(.in1(~Stall), .in2(enable), .out(StallOut));
 ORGate enableGate(.in1(StallOut), .in2(CPCSig), .out(EnablePCIFID));
@@ -295,10 +291,6 @@ mux2x1 #(32) ALUMux2(.in1(ForwardBMuxOut2), .in2(extImm2E), .s(ALUSrc2E), .out(A
 ALU alu2(.operand1(ForwardAMuxOut2), .operand2(ALUin2), .shamt(shamt2E) ,.opSel(ALUOp2E), .result(ALUResult2));
 
   
-
-
-
-
 pipe #(118) EX_MEM(
     .D({branchAdderResult1E, RegWriteEn1E, MemToReg1E, MemWriteEn1E, MemReadEn1E, 
         Branch1E, bit26_1E, prediction1E, ALUResult1, ForwardBMuxOut1,ForwardAMuxOut1, writeRegister1E
@@ -343,8 +335,8 @@ pcCorrection PCC (
     .CorrectedPC1(CorrectedPC1), .CorrectedPC2(CorrectedPC2)
 );
 dual_issue_data_memory DM (
-	.address_a(ALUResult1M[10:0]),
-	.address_b(ALUResult2M[10:0]),
+	.address_a(ALUResult1M[11:0]),
+	.address_b(ALUResult2M[11:0]),
 	.clock(~clk),
 	.data_a(ForwardBMuxOut1M),
 	.data_b(ForwardBMuxOut2M),
