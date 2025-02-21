@@ -10,8 +10,9 @@ Ensure the following software is installed and properly configured:
 - **Quartus Prime Lite (Free Version)**
   - Make sure ModelSim (32-bit, bundled with Quartus Prime Lite) is installed and set in the system `PATH` variable.
   
-- **Python (32-bit version, 3.13.2 recommended)**
-  - ModelSim requires a 32-bit Python version to avoid DLL architecture mismatches.
+- **Python (32-bit version, 3.13.2 recommended as of writing this README)**
+  - A 32-bit Python version is required to avoid DLL architecture mismatches with ModelSim.
+  - While it is possible to switch to Questa or another simulator, using a 32-bit Python version was the easiest integration approach in this setup.
   
 - **Git**
   - Windows: Install via [Git for Windows](https://git-scm.com/download/win)
@@ -106,6 +107,7 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 4. **Run the testbench**:
    ```sh
    make
+   ```
    ```
 
 # JoSDC-2024-Verification-cocoTB-
