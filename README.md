@@ -1,23 +1,21 @@
 # The Plumbers Team - Cocotb Verification
 
-This repository contains the Cocotb-based verification framework for a Verilog HDL design, developed for a hardware design competition. The goal is to validate a dual-issue superscalar processor using randomized testbenches.
+This repository contains the Cocotb-based verification framework for a Verilog HDL design, developed for the JoSDC 2024 competition. The goal is to validate a dual-issue superscalar processor using simple testbenches.
 
 ## Prerequisites
 
 ### Required Software
+
 Ensure the following software is installed and properly configured:
 
 - **Quartus Prime Lite (Free Version)**
   - Make sure ModelSim (32-bit, bundled with Quartus Prime Lite) is installed and set in the system `PATH` variable.
-  
 - **Python (32-bit version, 3.13.2 recommended as of writing this README)**
   - A 32-bit Python version is required to avoid DLL architecture mismatches with ModelSim.
   - While it is possible to switch to Questa or another simulator, using a 32-bit Python version was the easiest integration approach in this setup.
-  
 - **Git**
   - Windows: Install via [Git for Windows](https://git-scm.com/download/win)
   - Linux: Install using package manager (`sudo apt install git` or equivalent)
-  
 - **Make**
   - Windows: Install via [Chocolatey](https://chocolatey.org/install)
     ```sh
@@ -28,18 +26,22 @@ Ensure the following software is installed and properly configured:
 ## Setup Instructions
 
 ### Clone the Repository
+
 ```sh
 git clone https://github.com/your-repo/cocoTB.git
 cd cocoTB
 ```
 
 ### Create a Virtual Environment
+
 Inside the cloned repository directory:
+
 ```sh
 python -m venv cocoTB_venv
 ```
 
 ### Activate Virtual Environment
+
 - **Windows:**
   ```sh
   cocoTB_venv\Scripts\activate.bat
@@ -50,6 +52,7 @@ python -m venv cocoTB_venv
   ```
 
 ### Install Dependencies
+
 ```sh
 pip install cocotb cocotb-test
 ```
@@ -57,6 +60,7 @@ pip install cocotb cocotb-test
 ## Running Tests
 
 ### Understanding the Makefile
+
 The project uses a Makefile to run tests with ModelSim.
 
 ```make
@@ -83,11 +87,14 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 ```
 
 - Modify `MODULE` and `TOPLEVEL` to match the module you want to test.
+- Place the `.mif` files required for any IP modules used in the top-level design inside the `testbenches` directory where the Makefile is located.
 - Testbenches contain randomized input sets for functional verification.
 - Refer to the [Cocotb documentation](https://docs.cocotb.org/) for further details on using Makefiles.
 
 ### Running Tests
+
 1. **Run the provided script**:
+
    - On Windows, execute `run.bat` from the repository root:
      ```sh
      run.bat
@@ -95,20 +102,23 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
      **Note:** This script only works on Windows and requires the user to be logged into Git with it installed.
 
 2. **Navigate to testbenches directory**:
+
    ```sh
    cd cocoTB/testbenches
    ```
 
 3. **Clean previous builds**:
+
    ```sh
    make clean
    ```
 
 4. **Run the testbench**:
+
    ```sh
    make
    ```
-   ```
+
 
 # JoSDC-2024-Verification-cocoTB-
 modules tested : ORGate4 ✅ ORGate ✅ adder ✅ ANDGate ✅ ANDGate3 ✅ Comparator ✅ programCounter ✅ ALU ✅ controlUnit ✅ Pipes ✅ XNOR ✅ mux2x1 ✅ mux3to1 ✅ mux3to1 ✅ mux5to1 ✅ signextender ✅ registerFile ✅  mux2x1En ✅ HazardDetectionUnit ✅ forwardingUnit ✅ pcCorrection ✅ BranchPredictionUnit ✅
