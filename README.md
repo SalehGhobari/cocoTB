@@ -28,7 +28,7 @@ Ensure the following software is installed and properly configured:
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/your-repo/cocoTB.git
+git clone https://github.com/SalehGhobari/cocoTB.git
 cd cocoTB
 ```
 
