@@ -1,11 +1,13 @@
 import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, Timer
+import ctypes
 
-
+def to_signed_16bit(value):
+    return ctypes.c_int16(value).value
 
 def to_int(array):
-    return [int(x) for x in array]
+    return [ctypes.c_int32(int(x)).value for x in array]
 
 def decode_instruction(instruction):
     opcode = (instruction >> 26) & 0x3F
@@ -41,13 +43,13 @@ def decode_instruction(instruction):
             return "Unknown R-Type instruction"
     elif opcode in opcodes:
         if opcode in {0x04, 0x05}:  # Branch instructions
-            return f"{opcodes[opcode]} ${rs}, ${rt}, {imm}"
+            return f"{opcodes[opcode]} ${rs}, ${rt}, {to_signed_16bit(imm)}"
         elif opcode in {0x02, 0x03}:  # Jump instructions
             return f"{opcodes[opcode]} {hex(address)}"
         elif opcode in {0x23, 0x2B}:  # Load/store instructions
-            return f"{opcodes[opcode]} ${rt}, {imm}(${rs})"
+            return f"{opcodes[opcode]} ${rt}, {to_signed_16bit(imm)}(${rs})"
         else:  # Immediate-type instructions
-            return f"{opcodes[opcode]} ${rt}, ${rs}, {imm}"
+            return f"{opcodes[opcode]} ${rt}, ${rs}, {to_signed_16bit(imm)}"
     else:
         return "Unknown instruction"
 
@@ -79,7 +81,7 @@ async def processor_test(dut):
     total_cycles = 0
 
     cycle = 0
-    while cycle <= 200:
+    while True:
         await RisingEdge(dut.clk)
         await Timer(1, units="ns")
         total_cycles = cycle - max_nops + 1
