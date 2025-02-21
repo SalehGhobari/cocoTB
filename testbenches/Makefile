@@ -21,9 +21,6 @@ SIM_ARGS += -L work
 SIM_ARGS += -L lpm_ver
 SIM_ARGS += -L altera_mf_ver
 
-# Path to Quartus libraries (change version if needed)
-
-
 # Include the default Cocotb makefile
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
