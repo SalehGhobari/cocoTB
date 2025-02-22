@@ -12,10 +12,10 @@ async def test_pipe(dut):
     clock = Clock(dut.clk, 10, units="ns")  # 10 ns clock period
     cocotb.start_soon(clock.start())
 
-    # Helper function to reset the pipeline
+
     async def reset_pipeline():
         dut.reset.value = 0  # Active low reset
-        await FallingEdge(dut.clk)  # Wait for one clock cycle
+        await FallingEdge(dut.clk)
         dut.reset.value = 1  # Deactivate reset
         await RisingEdge(dut.clk)
 
@@ -23,7 +23,7 @@ async def test_pipe(dut):
     dut.enable.value = 0
     dut.flush.value = 0
     dut.D.value = 0
-    await reset_pipeline()  # Reset the pipeline
+    await reset_pipeline()
 
     # Test 1: Check reset behavior
     assert dut.Q.value == 0, f"Reset failed: expected 0, got {dut.Q.value}"
@@ -62,7 +62,7 @@ async def test_pipe(dut):
     assert dut.Q.value == 0, f"Reset failed: expected 0, got {dut.Q.value}"
 
     # Test 7: Random data propagation
-    for _ in range(100):  # Test 10 random cases
+    for _ in range(100):
         data = random.randint(0, 2**96 - 1)  # Random 96-bit value
         dut.enable.value = 1
         dut.flush.value = 0

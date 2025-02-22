@@ -6,11 +6,10 @@ from cocotb.result import TestSuccess
 async def test_xnor_gate(dut):
     """Testbench for XNORGate module."""
 
-    # Helper function to set inputs and check the output
     async def test_case(in1, in2, expected_out):
         dut.in1.value = in1
         dut.in2.value = in2
-        await Timer(1, units="ns")  # Wait for signals to propagate
+        await Timer(1, units="ns")
         assert dut.out.value == expected_out, (
             f"Test failed: in1={in1}, in2={in2}, expected={expected_out}, got={dut.out.value}"
         )

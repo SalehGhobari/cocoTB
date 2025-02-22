@@ -8,10 +8,9 @@ async def test_program_counter(dut):
     """Testbench for programCounter module."""
 
     # Start a clock
-    clock = Clock(dut.clk, 10, units="ns")  # 10 ns clock period
+    clock = Clock(dut.clk, 10, units="ns")
     cocotb.start_soon(clock.start())
 
-    # Helper function to reset the counter
     async def reset_counter():
         dut.rst.value = 0  # Active low reset
         await FallingEdge(dut.clk)  # Wait for one clock cycle
@@ -40,7 +39,7 @@ async def test_program_counter(dut):
     # Test 3: Check counter update when enable is high
     dut.enable.value = 1
     dut.PCin.value = 100
-    await Timer(1, units="ns")  # Wait for signals to stabilize
+    await Timer(1, units="ns")
     await RisingEdge(dut.clk)
     await Timer(1, units = "ns")
     dut._log.info(f"After update: PCout = {dut.PCout.value}")
@@ -49,7 +48,7 @@ async def test_program_counter(dut):
     # Test 4: Check counter hold again
     dut.enable.value = 0
     dut.PCin.value = 200
-    await Timer(1, units="ns")  # Wait for signals to stabilize
+    await Timer(1, units="ns")
     await RisingEdge(dut.clk)
     await Timer(1, units = "ns")
     dut._log.info(f"After hold: PCout = {dut.PCout.value}")
@@ -58,7 +57,7 @@ async def test_program_counter(dut):
     # Test 5: Check counter update with a new value
     dut.enable.value = 1
     dut.PCin.value = 200
-    await Timer(1, units="ns")  # Wait for signals to stabilize
+    await Timer(1, units="ns")
     await RisingEdge(dut.clk)
     await Timer(1, units = "ns")
     dut._log.info(f"After update: PCout = {dut.PCout.value}")
@@ -69,5 +68,4 @@ async def test_program_counter(dut):
     dut._log.info(f"After reset: PCout = {dut.PCout.value}")
     assert dut.PCout.value == 2046, f"Reset failed: expected 2046, got {dut.PCout.value}"
 
-    # If all assertions pass, the test is successful
     raise TestSuccess("All programCounter test cases passed!")

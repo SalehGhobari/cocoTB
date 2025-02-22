@@ -7,7 +7,7 @@ import random
 async def test_forwarding_unit(dut):
     """Test Forwarding Unit"""
 
-    # Helper function to set inputs and wait for a small delay
+    # function to set inputs and wait for a small delay
     async def set_inputs(rsE1, rtE1, rsE2, rtE2, rsM2, rtM2, writeRegisterM1, writeRegisterM2, writeRegisterW1, writeRegisterW2,
                          regWriteM1, regWriteM2, regWriteW1, regWriteW2, branch2M):
         dut.rsE1.value = rsE1
@@ -86,7 +86,7 @@ async def test_forwarding_unit(dut):
     assert dut.ForwardBranchB.value == 0, "ForwardBranchB should be 0"
 
     # Randomized Inputs Test
-    for _ in range(100):  # Run 100 random tests
+    for _ in range(100):
         rsE1 = random.randint(0, 31)
         rtE1 = random.randint(0, 31)
         rsE2 = random.randint(0, 31)

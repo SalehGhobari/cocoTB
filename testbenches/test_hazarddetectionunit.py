@@ -7,7 +7,7 @@ import random
 async def test_hazard_detection_unit(dut):
     """Test Hazard Detection Unit"""
 
-    # Helper function to set inputs and wait for a small delay
+    # function to set inputs and wait for a small delay
     async def set_inputs(takenBranch1, takenBranch2, pcSrc1, pcSrc2, memReadE1, memReadE2,
                          branch1, branch2, predictionE1, predictionE2, writeRegisterE1, writeRegisterE2,
                          rsD1, rtD1, rsD2, rtD2):
@@ -110,7 +110,7 @@ async def test_hazard_detection_unit(dut):
     assert dut.CPCSignal1.value == 1, "CPCSignal1 should be 1"
 
     # Randomized Inputs Test
-    for _ in range(10000    ):  # Run 100 random tests
+    for _ in range(10000    ):
         takenBranch1 = random.randint(0, 1)
         takenBranch2 = random.randint(0, 1)
         pcSrc1 = random.randint(0, 1)

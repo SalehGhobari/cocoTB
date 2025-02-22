@@ -19,7 +19,7 @@ async def test_mux3to1(dut):
         dut.in3.value = in3
         dut.s.value = s
         
-        await Timer(2, units="ns")  # Wait for a short time for propagation
+        await Timer(2, units="ns")
         
         # Check output
         if s == 0:

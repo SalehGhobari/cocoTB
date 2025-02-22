@@ -7,7 +7,7 @@ async def test_mux5to1(dut):
     """Test the 5x1 multiplexer."""
     
     # Test with multiple random values
-    for _ in range(10):
+    for _ in range(100):
         in1 = random.randint(0, 2**32 - 1)  # Random 32-bit value
         in2 = random.randint(0, 2**32 - 1)  # Random 32-bit value
         in3 = random.randint(0, 2**32 - 1)  # Random 32-bit value

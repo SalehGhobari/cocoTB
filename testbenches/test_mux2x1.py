@@ -17,7 +17,7 @@ async def test_mux2x1(dut):
         dut.in2.value = in2
         dut.s.value = s
         
-        await Timer(2, units="ns")  # Wait for a short time for propagation
+        await Timer(2, units="ns")
         
         # Check output
         expected_out = in1 if s == 0 else in2

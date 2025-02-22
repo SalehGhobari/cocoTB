@@ -21,13 +21,13 @@ ALU_OPS = {
 async def test_alu_randomized(dut):
     """Randomized testbench for ALU module."""
 
-    # Helper function to perform ALU operations
+    # function to perform ALU operations
     async def perform_operation(op, a, b, shamt=0):
         dut.operand1.value = a
         dut.operand2.value = b
         dut.shamt.value = shamt
         dut.opSel.value = ALU_OPS[op]
-        await Timer(1, units="ns")  # Small delay for signal propagation
+        await Timer(1, units="ns")
 
     # Number of random test cases per operation
     num_random_tests = 100000
@@ -112,5 +112,5 @@ async def test_alu_randomized(dut):
         expected_result = (a >> shamt) & 0xFFFFFFFF  # Mask to 32 bits
         assert dut.result.value == expected_result, f"SRL failed: a={a}, shamt={shamt}, expected={expected_result}, got={dut.result.value}"
 
-    # If all assertions pass, the test is successful
+
     raise TestSuccess("All ALU operations passed!")

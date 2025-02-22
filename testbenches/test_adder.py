@@ -7,7 +7,7 @@ async def test_adder(dut):
     """Test the adder module with 10-bit inputs and 11-bit output"""
     dut._log.info("Starting adder test")
 
-    # Define input size (10 bits) and output size (11 bits)
+    
     input_size = 10
     output_size = 11
 
@@ -21,7 +21,7 @@ async def test_adder(dut):
         dut.in1.value = in1
         dut.in2.value = in2
 
-        # Wait for signal propagation
+        
         await Timer(10, units="ns")
 
         # Calculate expected output

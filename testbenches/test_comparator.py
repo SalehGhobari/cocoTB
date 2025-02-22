@@ -25,5 +25,5 @@ async def test_comparator(dut):
         expected_equal = 1 if a == b else 0  # Expected output
         await test_case(a, b, expected_equal)
 
-    # If all assertions pass, the test is successful
+
     raise TestSuccess("All Comparator test cases passed!")

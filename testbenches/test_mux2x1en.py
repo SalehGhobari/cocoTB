@@ -41,7 +41,7 @@ async def test_enable_behavior(dut):
     """Test enable functionality"""
 
     # Capture initial output value (in case it's not zero)
-    await Timer(2, units="ns")  # Allow any initial reset effects to settle
+    await Timer(2, units="ns")
     previous_out = dut.out.value.integer  # Read initial output
 
     # Test with enable=0 for various inputs
@@ -59,7 +59,6 @@ async def test_enable_behavior(dut):
         dut.s.value = s
         dut.en.value = en
 
-        # Wait for signals to propagate
         await Timer(2, units="ns")
 
         if en == 0:
@@ -106,7 +105,7 @@ async def test_enable_behavior(dut):
 async def test_random_values(dut):
     """Test multiplexer with random input values"""
     
-    for _ in range(20):  # Run 20 random test cases
+    for _ in range(20):
         # Generate random 32-bit values
         in1 = random.randint(0, 0xFFFFFFFF)
         in2 = random.randint(0, 0xFFFFFFFF)

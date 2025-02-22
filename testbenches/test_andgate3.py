@@ -6,7 +6,7 @@ from cocotb.result import TestSuccess
 async def test_and3gate(dut):
     """Testbench for 3-input AND gate."""
 
-    # Define a helper function to set inputs and check the output
+    # function to set inputs and check the output
     async def test_case(in1, in2, in3, expected_out):
         dut.in1.value = in1
         dut.in2.value = in2

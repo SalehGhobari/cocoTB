@@ -100,23 +100,19 @@ async def processor_test(dut):
         if instr2 != 0x00000000:
             total_instructions_executed += 1
 
+        
+        cocotb.log.warning(f"Register File: {register_values}")
+        cocotb.log.warning(f"DM: {dm_values}\n")
+
+
         # Check for NOPs
         if instr1 == 0x00000000 and instr2 == 0x00000000:
             nop_count += 1
             if nop_count >= max_nops:
                 cocotb.log.info("Detected sequence of NOPs, Program ended at cycle " + str(cycle - max_nops))
-                cocotb.log.warning(f"Register File: {register_values}")
-                cocotb.log.warning(f"DM: {dm_values}\n")
                 break
         else:
             nop_count = 0
-
-        
-        cocotb.log.warning(f"Register File: {register_values}")
-
-        
-        cocotb.log.warning(f"DM: {dm_values}\n")
-
         cycle += 1  # Increment cycle count manually
 
 

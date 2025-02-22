@@ -6,11 +6,11 @@ from cocotb.result import TestSuccess
 async def test_orgate2(dut):
     """Testbench for 2-input OR gate."""
 
-    # Define a helper function to set inputs and check the output
+    # function to set inputs and check the output
     async def test_case(in1, in2, expected_out):
         dut.in1.value = in1
         dut.in2.value = in2
-        await Timer(1, units='ns')  # Give time for the outputs to settle
+        await Timer(1, units='ns')
         assert dut.out.value == expected_out, (
             f"Test failed: inputs={in1},{in2}, "
             f"expected={expected_out}, got={dut.out.value}"
@@ -29,5 +29,5 @@ async def test_orgate2(dut):
     for case in test_cases:
         await test_case(*case)
 
-    # If all assertions pass, the test is successful
+
     raise TestSuccess("All ORGate2 test cases passed!")

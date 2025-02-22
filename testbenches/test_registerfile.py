@@ -57,7 +57,6 @@ async def test_single_write(dut):
     
     # Set up read
     dut.readRegister1.value = test_reg
-    # Wait for read to propagate
     await Timer(2, units='ns')
     
     assert dut.readData1.value == test_data, f"Written data doesn't match read data. Expected {test_data:X}, got {dut.readData1.value:X}"
@@ -84,7 +83,6 @@ async def test_dual_write(dut):
     dut.writeData1.value = test_data1
     dut.writeData2.value = test_data2
     
-    # Wait for negative edge where write occurs
     await FallingEdge(dut.clk)
     await Timer(2, units='ns')
     

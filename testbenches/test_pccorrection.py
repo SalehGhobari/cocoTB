@@ -7,7 +7,7 @@ import random
 async def test_pc_correction(dut):
     """Test PC Correction Logic"""
 
-    # Helper function to set inputs and wait for a small delay
+    #function to set inputs and wait for a small delay
     async def set_inputs(PredictionM1, PredictionM2, branch_taken1, branch_taken2, PCPlus1M, PCPlus2M, branchAdderResultM1, branchAdderResultM2):
         dut.PredictionM1.value = PredictionM1
         dut.PredictionM2.value = PredictionM2

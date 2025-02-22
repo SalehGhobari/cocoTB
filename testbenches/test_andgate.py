@@ -6,7 +6,7 @@ from cocotb.result import TestSuccess
 async def test_andgate(dut):
     """Testbench for 2-input AND gate."""
 
-    # Define a helper function to set inputs and check the output
+    # function to set inputs and check the output
     async def test_case(in1, in2, expected_out):
         dut.in1.value = in1
         dut.in2.value = in2
@@ -28,6 +28,5 @@ async def test_andgate(dut):
     # Run all test cases
     for case in test_cases:
         await test_case(*case)
-
-    # If all assertions pass, the test is successful
+        
     raise TestSuccess("All ANDGate test cases passed!")

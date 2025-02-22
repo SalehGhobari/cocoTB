@@ -114,5 +114,5 @@ async def test_control_unit_randomized(dut):
         expected_signals = EXPECTED_SIGNALS[(opCode, funct)]
         await test_case(opCode, funct, expected_signals)
 
-    # If all assertions pass, the test is successful
+
     raise TestSuccess("All controlUnit test cases passed!")
