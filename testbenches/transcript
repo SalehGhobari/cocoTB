@@ -6,7 +6,7 @@
 # vmap work sim_build/work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 03:35:56 on Feb 22,2025
+# Start time: 06:08:35 on Feb 22,2025
 # vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ALU.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ANDGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/BranchPredictionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Comparator.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ComparatorIP.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/HazardDetectionUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/ORGate.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/Pipes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/XNOR.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/adder.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/controlUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_data_memory.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/dual_issue_inst_mem.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/forwardingUnit.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/muxes.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/pcCorrection.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/processor.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/programCounter.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/registerFile.v C:/Users/Saleh/Desktop/cocoTB/SuperScalar/signextender.v 
 # -- Compiling module ALU
 # -- Compiling module ANDGate
@@ -38,10 +38,10 @@
 # 	AND3Gate
 # 	Comparator
 # 	processor
-# End time: 03:35:56 on Feb 22,2025, Elapsed time: 0:00:00
+# End time: 06:08:36 on Feb 22,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" -L work -L lpm_ver -L altera_mf_ver -onfinish exit -pli "C:/Users/Saleh/Desktop/cocoTB/cocoTB_venv/Lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" work.processor 
-# Start time: 03:35:56 on Feb 22,2025
+# Start time: 06:08:36 on Feb 22,2025
 # Loading sv_std.std
 # Loading work.processor
 # Loading work.programCounter
@@ -76,5 +76,5 @@
 # Time: 0  Instance: processor.instMem.altsyncram_component.m_default.altsyncram_inst
 # ** Note: $finish    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(50185)
 #    Time: 30431001 ps  Iteration: 0  Instance: /processor
-# End time: 03:37:10 on Feb 22,2025, Elapsed time: 0:01:14
+# End time: 06:10:31 on Feb 22,2025, Elapsed time: 0:01:55
 # Errors: 0, Warnings: 0
