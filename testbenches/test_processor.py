@@ -66,8 +66,8 @@ async def processor_test(dut):
     dut.enable.value = 1
     dut.rst.value = 0
     await Timer(1, units="ns")  
-    cocotb.log.info(f"rst asserted, PCin Value = {int(dut.pc.PCin.value)}")
-    cocotb.log.info(f"rst asserted, PCout Value = {int(dut.pc.PCout.value)}")
+    cocotb.log.warning(f"rst asserted, PCin Value = {int(dut.pc.PCin.value)}")
+    cocotb.log.warning(f"rst asserted, PCout Value = {int(dut.pc.PCout.value)}")
     await Timer(3, units="ns")  
     dut.rst.value = 1
     
@@ -82,14 +82,17 @@ async def processor_test(dut):
 
     cycle = 0
     while True:
+        registers = to_int(dut.RegFile.registers.value)
+        register_values = " | ".join(f"R{i}: {reg}" for i, reg in enumerate(registers))
+        dm_values = to_int(dut.DM.altsyncram_component.m_default.altsyncram_inst.mem_data.value[0:20])
         await RisingEdge(dut.clk)
         await Timer(1, units="ns")
         total_cycles = cycle - max_nops + 1
-        cocotb.log.info(f"Cycle {cycle}: PC = {int(dut.PC.value)}")
+        cocotb.log.warning(f"Cycle {cycle}: PC = {int(dut.PC.value)}")
         instr1 = dut.instMem.q_a.value.integer
         instr2 = dut.instMem.q_b.value.integer
-        cocotb.log.info(f"Instruction 1 = {hex(instr1)} ({decode_instruction(instr1)})")
-        cocotb.log.info(f"Instruction 2 = {hex(instr2)} ({decode_instruction(instr2)})")
+        cocotb.log.warning(f"Instruction 1 = {hex(instr1)} ({decode_instruction(instr1)})")
+        cocotb.log.warning(f"Instruction 2 = {hex(instr2)} ({decode_instruction(instr2)})")
 
         # Count non-NOP instructions
         if instr1 != 0x00000000:
@@ -102,16 +105,17 @@ async def processor_test(dut):
             nop_count += 1
             if nop_count >= max_nops:
                 cocotb.log.info("Detected sequence of NOPs, Program ended at cycle " + str(cycle - max_nops))
+                cocotb.log.warning(f"Register File: {register_values}")
+                cocotb.log.warning(f"DM: {dm_values}\n")
                 break
         else:
             nop_count = 0
 
-        registers = to_int(dut.RegFile.registers.value)
-        register_values = " | ".join(f"R{i}: {reg}" for i, reg in enumerate(registers))
-        cocotb.log.info(f"Register File: {register_values}")
+        
+        cocotb.log.warning(f"Register File: {register_values}")
 
-        dm_values = to_int(dut.DM.altsyncram_component.m_default.altsyncram_inst.mem_data.value[0:20])
-        cocotb.log.info(f"DM: {dm_values}\n")
+        
+        cocotb.log.warning(f"DM: {dm_values}\n")
 
         cycle += 1  # Increment cycle count manually
 

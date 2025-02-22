@@ -59,7 +59,7 @@ pip install cocotb cocotb-test
 
 ## Running Tests
 
-### Understanding the Makefile
+### Makefile
 
 The project uses a Makefile to run tests with ModelSim.
 
@@ -88,7 +88,7 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 
 - Modify `MODULE` and `TOPLEVEL` to match the module you want to test.
 - Place the `.mif` files required for any IP modules used in the top-level design inside the `testbenches` directory where the Makefile is located.
-- Testbenches contain randomized input sets for functional verification.
+- Testbenches of the individual components contain randomized input sets for functional verification but the top level design was tested using the benchmarks given by the committee.
 - Refer to the [Cocotb documentation](https://docs.cocotb.org/) for further details on using Makefiles.
 
 ### Running Tests
