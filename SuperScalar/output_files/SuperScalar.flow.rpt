@@ -1,5 +1,5 @@
 Flow report for SuperScalar
-Sat Feb 22 19:23:46 2025
+Sat Feb 22 22:36:23 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Feb 22 19:23:46 2025       ;
+; Flow Status                        ; Successful - Sat Feb 22 22:36:23 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SuperScalar                                 ;
 ; Top-level Entity Name              ; processor                                   ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/22/2025 19:23:40 ;
+; Start date & time ; 02/22/2025 22:36:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SuperScalar         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 106444399612921.174024142010440        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 106444399612921.174025297406396        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -95,8 +95,6 @@ https://fpgasoftware.intel.com/eula.
 ; MISC_FILE                            ; dual_issue_data_memory_bb.v            ; --            ; --          ; --             ;
 ; MISC_FILE                            ; dual_issue_inst_mem_inst.v             ; --            ; --          ; --             ;
 ; MISC_FILE                            ; dual_issue_inst_mem_bb.v               ; --            ; --          ; --             ;
-; MISC_FILE                            ; ComparatorIP_inst.v                    ; --            ; --          ; --             ;
-; MISC_FILE                            ; ComparatorIP_bb.v                      ; --            ; --          ; --             ;
 ; MUX_RESTRUCTURE                      ; Off                                    ; Auto          ; --          ; --             ;
 ; NUM_PARALLEL_PROCESSORS              ; All                                    ; --            ; --          ; --             ;
 ; OPTIMIZATION_MODE                    ; Aggressive Performance                 ; Balanced      ; --          ; --             ;
@@ -123,8 +121,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4762 MB             ; 00:00:14                           ;
-; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4752 MB             ; 00:00:20                           ;
+; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:20                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

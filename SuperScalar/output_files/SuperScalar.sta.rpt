@@ -1,5 +1,5 @@
 Timing Analyzer report for SuperScalar
-Sat Feb 22 19:00:06 2025
+Sat Feb 22 22:30:26 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -93,15 +93,15 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 3.12        ;
+; Average used               ; 3.06        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  48.9%      ;
-;     Processor 3            ;  47.8%      ;
-;     Processor 4            ;  47.6%      ;
-;     Processors 5-6         ;  33.8%      ;
+;     Processor 2            ;  47.4%      ;
+;     Processor 3            ;  46.4%      ;
+;     Processor 4            ;  46.1%      ;
+;     Processors 5-6         ;  32.9%      ;
 +----------------------------+-------------+
 
 
@@ -110,7 +110,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; SuperScalar.sdc ; OK     ; Sat Feb 22 19:00:01 2025 ;
+; SuperScalar.sdc ; OK     ; Sat Feb 22 22:30:20 2025 ;
 +-----------------+--------+--------------------------+
 
 
@@ -514,7 +514,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Feb 22 19:00:00 2025
+    Info: Processing started: Sat Feb 22 22:30:19 2025
 Info: Command: quartus_sta SuperScalar -c SuperScalar
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -598,9 +598,9 @@ Info (332146): Worst-case minimum pulse width slack is 6.668
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4938 megabytes
-    Info: Processing ended: Sat Feb 22 19:00:06 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4939 megabytes
+    Info: Processing ended: Sat Feb 22 22:30:26 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:19
 
 

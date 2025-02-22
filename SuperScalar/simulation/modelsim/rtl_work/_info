@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/simulation/modelsim
 vadder
-Z1 !s110 1740241440
+Z1 !s110 1740265831
 !i10b 1
 !s100 2XAHz4QhFZG[Z]NZzNF^41
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1740241440.000000
+Z6 !s108 1740265831.000000
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/adder.v|
 !i113 1
@@ -50,7 +50,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z10 !s108 1740265830.000000
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ALU.v|
 !i113 1
@@ -67,17 +67,17 @@ I4<4Kz<KXTO7IemG?lBnIb3
 R3
 R0
 R4
-Z10 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v
-Z11 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v
+Z11 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v
+Z12 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v
 !i122 9
-Z12 L0 9 7
+Z13 L0 9 7
 R5
 r1
 !s85 0
 31
 R6
-Z13 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v|
-Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v|
+Z14 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v|
 !i113 1
 R7
 R8
@@ -92,24 +92,24 @@ ILMYidQSk4n@C=e8GcUBQ^0
 R3
 R0
 R4
-R10
 R11
+R12
 !i122 9
-Z15 L0 1 7
+Z16 L0 1 7
 R5
 r1
 !s85 0
 31
 R6
-R13
 R14
+R15
 !i113 1
 R7
 R8
 R9
 n@a@n@d@gate
 vBranchPredictionUnit
-Z16 !s110 1740241439
+Z17 !s110 1740265830
 !i10b 1
 !s100 `HGa?jH<W0=<Kj5mjDFk80
 R2
@@ -125,7 +125,7 @@ R5
 r1
 !s85 0
 31
-Z17 !s108 1740241439.000000
+R10
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/BranchPredictionUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/BranchPredictionUnit.v|
 !i113 1
@@ -134,7 +134,7 @@ R8
 R9
 n@branch@prediction@unit
 vComparator
-Z18 !s110 1740241441
+R1
 !i10b 1
 !s100 oeD`FL19XV>R4ze6]>FP>1
 R2
@@ -150,7 +150,7 @@ R5
 r1
 !s85 0
 31
-Z19 !s108 1740241441.000000
+R6
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/Comparator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/Comparator.v|
 !i113 1
@@ -159,7 +159,7 @@ R8
 R9
 n@comparator
 vcontrolUnit
-R1
+R17
 !i10b 1
 !s100 C`K2[:mH=FL1BQ_T@A>:f2
 R2
@@ -175,7 +175,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/controlUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/controlUnit.v|
 !i113 1
@@ -184,14 +184,14 @@ R8
 R9
 ncontrol@unit
 vdual_issue_data_memory
-R18
+Z18 !s110 1740265832
 !i10b 1
-!s100 bHGC5KUhKW18:QS2f3jcL2
+!s100 QC5nFFT?c?6^`?5f9hj^33
 R2
-IJL3:6<?YDXP@He07CEa590
+ICdjMDAUNnDVi3fzaHfjmc2
 R3
 R0
-R4
+w1740252451
 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v
 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v
 !i122 17
@@ -200,7 +200,7 @@ R5
 r1
 !s85 0
 31
-R19
+Z19 !s108 1740265832.000000
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v|
 !i113 1
@@ -215,7 +215,7 @@ R2
 IeEUAUR2U?YYFEOb`b9]LK3
 R3
 R0
-R4
+w1740252455
 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_inst_mem.v
 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_inst_mem.v
 !i122 18
@@ -232,7 +232,7 @@ R7
 R8
 R9
 vForwardingUnit
-R18
+R1
 !i10b 1
 !s100 o^IY;AU1j];YcIhVO7k]72
 R2
@@ -248,7 +248,7 @@ R5
 r1
 !s85 0
 31
-R19
+R6
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/forwardingUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/forwardingUnit.v|
 !i113 1
@@ -257,7 +257,7 @@ R8
 R9
 n@forwarding@unit
 vHazardDetectionUnit
-R18
+R1
 !i10b 1
 !s100 XXSRh?RhbUNFFGcQF2TII2
 R2
@@ -273,7 +273,7 @@ R5
 r1
 !s85 0
 31
-R19
+R6
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/HazardDetectionUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/HazardDetectionUnit.v|
 !i113 1
@@ -282,7 +282,7 @@ R8
 R9
 n@hazard@detection@unit
 vmux2x1
-R16
+R17
 !i10b 1
 !s100 4M^A:Ag]085:BGa<AUCME3
 R2
@@ -298,7 +298,7 @@ R5
 r1
 !s85 0
 31
-R17
+R10
 Z23 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/muxes.v|
 Z24 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/muxes.v|
 !i113 1
@@ -306,7 +306,7 @@ R7
 R8
 R9
 vmux2x1En
-R16
+R17
 !i10b 1
 !s100 [6U`XD8[F50COOU_oE5[=0
 R2
@@ -322,7 +322,7 @@ R5
 r1
 !s85 0
 31
-R17
+R10
 R23
 R24
 !i113 1
@@ -331,7 +331,7 @@ R8
 R9
 nmux2x1@en
 vmux3to1
-R16
+R17
 !i10b 1
 !s100 96XkHkY?3PJYDeLD:XEJM0
 R2
@@ -347,7 +347,7 @@ R5
 r1
 !s85 0
 31
-R17
+R10
 R23
 R24
 !i113 1
@@ -355,7 +355,7 @@ R7
 R8
 R9
 vmux5to1
-R16
+R17
 !i10b 1
 !s100 6DXWAQkQ1jXP5N[G1cTUL2
 R2
@@ -371,7 +371,7 @@ R5
 r1
 !s85 0
 31
-R17
+R10
 R23
 R24
 !i113 1
@@ -379,7 +379,7 @@ R7
 R8
 R9
 vORGate
-R18
+R1
 !i10b 1
 !s100 =GPj@^9[_AOa29DTJS8;10
 R2
@@ -390,12 +390,12 @@ R4
 Z25 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ORGate.v
 Z26 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ORGate.v
 !i122 15
-R15
+R16
 R5
 r1
 !s85 0
 31
-R19
+R6
 Z27 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ORGate.v|
 Z28 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ORGate.v|
 !i113 1
@@ -404,7 +404,7 @@ R8
 R9
 n@o@r@gate
 vORGate4
-R18
+R1
 !i10b 1
 !s100 e3FGb8NTfl_?3^3c96]QB2
 R2
@@ -415,12 +415,12 @@ R4
 R25
 R26
 !i122 15
-R12
+R13
 R5
 r1
 !s85 0
 31
-R19
+R6
 R27
 R28
 !i113 1
@@ -445,7 +445,7 @@ R5
 r1
 !s85 0
 31
-R19
+R6
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/pcCorrection.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/pcCorrection.v|
 !i113 1
@@ -454,7 +454,7 @@ R8
 R9
 npc@correction
 vpipe
-R18
+R1
 !i10b 1
 !s100 >;L_F1Ab6o`HmXl2NCQg:3
 R2
@@ -478,7 +478,7 @@ R7
 R8
 R9
 vprocessor
-R1
+R17
 !i10b 1
 !s100 j[7RKo2_dBh:Y@odk`>El0
 R2
@@ -494,7 +494,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v|
 !i113 1
@@ -527,7 +527,7 @@ R8
 R9
 nprogram@counter
 vregisterFile
-R1
+R17
 !i10b 1
 !s100 O8JKWEI<>lWn>ZS>6@S[>3
 R2
@@ -543,7 +543,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/registerFile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar|C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/registerFile.v|
 !i113 1
@@ -578,12 +578,12 @@ R9
 vtestbench
 R18
 !i10b 1
-!s100 fCU>f@QbEVfI=207>jmmD0
+!s100 ;SfHOTbMgY265[d`W^6H`1
 R2
-I]?[jZVkjnE1U:3i_N5[kA2
+Iaim2UDVUJDYGi27J6:H]X2
 R3
 R0
-R20
+w1740263038
 8C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/testbench.v
 FC:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/testbench.v
 !i122 19

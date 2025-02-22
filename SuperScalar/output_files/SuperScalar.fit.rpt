@@ -1,5 +1,5 @@
 Fitter report for SuperScalar
-Sat Feb 22 18:59:54 2025
+Sat Feb 22 22:30:12 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -30,7 +30,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  22. Global & Other Fast Signals
  23. Fitter RAM Summary
  24. |processor|dual_issue_inst_mem:instMem|altsyncram:altsyncram_component|altsyncram_6492:auto_generated|ALTSYNCRAM
- 25. |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ALTSYNCRAM
+ 25. |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ALTSYNCRAM
  26. Routing Usage Summary
  27. LAB Logic Elements
  28. LAB-wide Signals
@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Feb 22 18:59:54 2025       ;
+; Fitter Status                      ; Successful - Sat Feb 22 22:30:12 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SuperScalar                                 ;
 ; Top-level Entity Name              ; processor                                   ;
@@ -159,16 +159,16 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.44        ;
+; Average used               ; 1.39        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  10.1%      ;
-;     Processor 3            ;   8.7%      ;
-;     Processor 4            ;   8.6%      ;
-;     Processor 5            ;   8.5%      ;
-;     Processor 6            ;   8.4%      ;
+;     Processor 2            ;   9.1%      ;
+;     Processor 3            ;   7.6%      ;
+;     Processor 4            ;   7.5%      ;
+;     Processor 5            ;   7.4%      ;
+;     Processor 6            ;   7.3%      ;
 +----------------------------+-------------+
 
 
@@ -177,38 +177,38 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+-----------------+------------------+---------------------+-----------+----------------+--------------------------------------------------------------------------------------------------+------------------+-----------------------+
 ; Node               ; Action          ; Operation        ; Reason              ; Node Port ; Node Port Name ; Destination Node                                                                                 ; Destination Port ; Destination Port Name ;
 +--------------------+-----------------+------------------+---------------------+-----------+----------------+--------------------------------------------------------------------------------------------------+------------------+-----------------------+
-; pipe:MEM_WB1|Q[5]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[0]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[6]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[1]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[7]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[2]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[8]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[3]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[9]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[4]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[10] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[5]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[11] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[6]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[12] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[7]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[13] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[8]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[14] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[9]  ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[15] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[10] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[16] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[11] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[17] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[12] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[18] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[13] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[19] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[14] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[20] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[15] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[21] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[16] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[22] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[17] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[23] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[18] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[24] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[19] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[25] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[20] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[26] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[21] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[27] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[22] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[28] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[23] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[29] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[24] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[30] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[25] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[31] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[26] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[32] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[27] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[33] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[28] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[34] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[29] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[35] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[30] ; PORTADATAOUT     ;                       ;
-; pipe:MEM_WB1|Q[36] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|q_a[31] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[5]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[0]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[6]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[1]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[7]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[2]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[8]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[3]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[9]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[4]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[10] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[5]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[11] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[6]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[12] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[7]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[13] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[8]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[14] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[9]  ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[15] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[10] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[16] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[11] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[17] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[12] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[18] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[13] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[19] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[14] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[20] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[15] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[21] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[16] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[22] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[17] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[23] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[18] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[24] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[19] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[25] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[20] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[26] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[21] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[27] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[22] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[28] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[23] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[29] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[24] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[30] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[25] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[31] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[26] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[32] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[27] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[33] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[28] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[34] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[29] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[35] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[30] ; PORTADATAOUT     ;                       ;
+; pipe:MEM_WB1|Q[36] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|q_a[31] ; PORTADATAOUT     ;                       ;
 +--------------------+-----------------+------------------+---------------------+-----------+----------------+--------------------------------------------------------------------------------------------------+------------------+-----------------------+
 
 
@@ -994,7 +994,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |controlUnit:CU2|                      ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|controlUnit:CU2                                                                            ; controlUnit            ; work         ;
 ;    |dual_issue_data_memory:DM|            ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_data_memory:DM                                                                  ; dual_issue_data_memory ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component                                  ; altsyncram             ; work         ;
-;          |altsyncram_f9m2:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated   ; altsyncram_f9m2        ; work         ;
+;          |altsyncram_qrk2:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated   ; altsyncram_qrk2        ; work         ;
 ;    |dual_issue_inst_mem:instMem|          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_inst_mem:instMem                                                                ; dual_issue_inst_mem    ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_inst_mem:instMem|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
 ;          |altsyncram_6492:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |processor|dual_issue_inst_mem:instMem|altsyncram:altsyncram_component|altsyncram_6492:auto_generated ; altsyncram_6492        ; work         ;
@@ -1440,22 +1440,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pipe:ID_EX_2|Q~99                                                                                      ; 0                 ; 6       ;
 ;      - pipe:ID_EX_2|Q~100                                                                                     ; 0                 ; 6       ;
 ;      - pipe:ID_EX_2|Q~101                                                                                     ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a0  ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a29 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a27 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a25 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a23 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a21 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a19 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a17 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a15 ; 1                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a13 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a11 ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a9  ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a7  ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a5  ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a3  ; 0                 ; 6       ;
-;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ram_block1a1  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a0  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a29 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a27 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a25 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a23 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a21 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a19 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a17 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a15 ; 1                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a13 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a11 ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a9  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a7  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a5  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a3  ; 0                 ; 6       ;
+;      - dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ram_block1a1  ; 0                 ; 6       ;
 +---------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1595,7 +1595,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                                  ; Type ; Mode           ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size   ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF                        ; Location                                                                                                                                                                                                                                             ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +-------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; Single Clock ; 4096         ; 32           ; 4096         ; 32           ; yes                    ; yes                     ; yes                    ; no                      ; 131072 ; 4096                        ; 32                          ; 4096                        ; 32                          ; 131072              ; 16   ; dual_issue_data_memory.mif ; M9K_X33_Y25_N0, M9K_X33_Y26_N0, M9K_X5_Y24_N0, M9K_X5_Y28_N0, M9K_X5_Y27_N0, M9K_X5_Y25_N0, M9K_X5_Y22_N0, M9K_X5_Y23_N0, M9K_X5_Y36_N0, M9K_X5_Y29_N0, M9K_X33_Y24_N0, M9K_X33_Y27_N0, M9K_X5_Y26_N0, M9K_X5_Y30_N0, M9K_X33_Y22_N0, M9K_X33_Y23_N0 ; Old data             ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; Single Clock ; 4096         ; 32           ; 4096         ; 32           ; yes                    ; yes                     ; yes                    ; no                      ; 131072 ; 4096                        ; 32                          ; 4096                        ; 32                          ; 131072              ; 16   ; dual_issue_data_memory.mif ; M9K_X33_Y25_N0, M9K_X33_Y26_N0, M9K_X5_Y24_N0, M9K_X5_Y28_N0, M9K_X5_Y27_N0, M9K_X5_Y25_N0, M9K_X5_Y22_N0, M9K_X5_Y23_N0, M9K_X5_Y36_N0, M9K_X5_Y29_N0, M9K_X33_Y24_N0, M9K_X33_Y27_N0, M9K_X5_Y26_N0, M9K_X5_Y30_N0, M9K_X33_Y22_N0, M9K_X33_Y23_N0 ; Old data             ; Old data               ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; dual_issue_inst_mem:instMem|altsyncram:altsyncram_component|altsyncram_6492:auto_generated|ALTSYNCRAM ; M9K  ; True Dual Port ; Single Clock ; 512          ; 32           ; 512          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 16384  ; 512                         ; 32                          ; 512                         ; 32                          ; 16384               ; 2    ; dual_issue_inst_memory.mif ; M9K_X33_Y20_N0, M9K_X33_Y19_N0                                                                                                                                                                                                                       ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +-------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
@@ -1675,7 +1675,7 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 
 RAM content values are presented in the following format: (Binary) (Octal) (Decimal) (Hexadecimal) 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated|ALTSYNCRAM                                                                                                                                                   ;
+; |processor|dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated|ALTSYNCRAM                                                                                                                                                   ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
@@ -2700,30 +2700,30 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  52 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
 Info (128000): Starting physical synthesis optimizations for speed
-Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:01
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:02
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:20
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:30
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 6% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 48% of the available device resources in the region that extends from location X11_Y11 to location X21_Y21
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:47
-Info (11888): Total time spent on timing analysis during the Fitter is 8.05 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:59
+Info (11888): Total time spent on timing analysis during the Fitter is 11.10 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/output_files/SuperScalar.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5913 megabytes
-    Info: Processing ended: Sat Feb 22 18:59:56 2025
-    Info: Elapsed time: 00:01:28
-    Info: Total CPU time (on all processors): 00:02:55
+    Info: Peak virtual memory: 5891 megabytes
+    Info: Processing ended: Sat Feb 22 22:30:13 2025
+    Info: Elapsed time: 00:01:56
+    Info: Total CPU time (on all processors): 00:03:40
 
 
 +----------------------------+

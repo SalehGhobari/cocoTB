@@ -17,13 +17,13 @@ vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innova
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ANDGate.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/XNOR.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/Pipes.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/Comparator.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/forwardingUnit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/HazardDetectionUnit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ORGate.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/pcCorrection.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_inst_mem.v}
-vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ComparatorIP.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/Ahmad/Desktop/github/JoSDC/Innovation\ Phase/SuperScalar {C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/testbench.v}
 

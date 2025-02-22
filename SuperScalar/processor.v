@@ -179,13 +179,12 @@ adder #(9) pcAdder2(.in1(PC), .in2(9'd1), .out(PCPlus1));
 mux2x1En #(9) instMemMux(.in1(nextPCP1), .in2(instMemTarget), .s(instMemPred),.en(EnablePCIFID), .out(instMemMuxOut));
 
 dual_issue_inst_mem instMem(.address_a(nextPC),
-                            .address_b(instMemMuxOut),
-                            .addressstall_a(~EnablePCIFID),
-                            .addressstall_b(~EnablePCIFID),
-                            .clock(clk),
-                            .enable(EnablePCIFID),
-                            .q_a(instr1),
-                            .q_b(instr2));
+							.address_b(instMemMuxOut),
+							.addressstall_a(~EnablePCIFID),
+							.addressstall_b(~EnablePCIFID),
+							.clock(clk),
+							.q_a(instr1),
+							.q_b(instr2));
 
 adder #(9) branchAdder1(.in1(PCPlus1), .in2(instr1[8:0]), .out(branchAdderResult1));
 adder #(9) branchAdder2(.in1(PCPlus2), .in2(instr2[8:0]), .out(branchAdderResult2));

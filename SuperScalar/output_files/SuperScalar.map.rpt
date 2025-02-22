@@ -1,5 +1,5 @@
 Analysis & Elaboration report for SuperScalar
-Sat Feb 22 19:23:46 2025
+Sat Feb 22 22:36:23 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
   5. Source assignments for dual_issue_inst_mem:instMem|altsyncram:altsyncram_component|altsyncram_6492:auto_generated
-  6. Source assignments for dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated
+  6. Source assignments for dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated
   7. Parameter Settings for User Entity Instance: adder:branchPcAdder
   8. Parameter Settings for User Entity Instance: adder:nextPcAdder
   9. Parameter Settings for User Entity Instance: adder:pcAdder
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Sat Feb 22 19:23:46 2025       ;
+; Analysis & Elaboration Status      ; Successful - Sat Feb 22 22:36:23 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SuperScalar                                 ;
 ; Top-level Entity Name              ; processor                                   ;
@@ -144,7 +144,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated ;
+; Source assignments for dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                ;
 +---------------------------------+--------------------+------+---------------------------------------------------+
@@ -620,7 +620,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; RAM_BLOCK_TYPE                     ; AUTO                       ; Untyped                              ;
 ; BYTE_SIZE                          ; 8                          ; Untyped                              ;
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                   ; Untyped                              ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ     ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; OLD_DATA                   ; Untyped                              ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_WITH_NBE_READ     ; Untyped                              ;
 ; INIT_FILE                          ; dual_issue_data_memory.mif ; Untyped                              ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                     ; Untyped                              ;
@@ -635,7 +635,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                      ; Untyped                              ;
 ; WIDTH_ECCSTATUS                    ; 3                          ; Untyped                              ;
 ; DEVICE_FAMILY                      ; MAX 10                     ; Untyped                              ;
-; CBXI_PARAMETER                     ; altsyncram_f9m2            ; Untyped                              ;
+; CBXI_PARAMETER                     ; altsyncram_qrk2            ; Untyped                              ;
 +------------------------------------+----------------------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -908,7 +908,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Feb 22 19:23:40 2025
+    Info: Processing started: Sat Feb 22 22:36:14 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SuperScalar -c SuperScalar --analysis_and_elaboration
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -961,8 +961,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file dual_is
     Info (12023): Found entity 1: dual_issue_data_memory File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_data_memory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file dual_issue_inst_mem.v
     Info (12023): Found entity 1: dual_issue_inst_mem File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/dual_issue_inst_mem.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file comparatorip.v
-    Info (12023): Found entity 1: ComparatorIP File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/ComparatorIP.v Line: 40
 Info (12127): Elaborating entity "processor" for the top level hierarchy
 Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:pc" File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v Line: 172
 Info (12128): Elaborating entity "adder" for hierarchy "adder:branchPcAdder" File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v Line: 174
@@ -1053,7 +1051,7 @@ Info (12133): Instantiated megafunction "dual_issue_data_memory:DM|altsyncram:al
     Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_WITH_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "OLD_DATA"
     Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_WITH_NBE_READ"
     Info (12134): Parameter "widthad_a" = "12"
     Info (12134): Parameter "widthad_b" = "12"
@@ -1062,18 +1060,18 @@ Info (12133): Instantiated megafunction "dual_issue_data_memory:DM|altsyncram:al
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_f9m2.tdf
-    Info (12023): Found entity 1: altsyncram_f9m2 File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/db/altsyncram_f9m2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_f9m2" for hierarchy "dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_f9m2:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qrk2.tdf
+    Info (12023): Found entity 1: altsyncram_qrk2 File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/db/altsyncram_qrk2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_qrk2" for hierarchy "dual_issue_data_memory:DM|altsyncram:altsyncram_component|altsyncram_qrk2:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "pipe" for hierarchy "pipe:MEM_WB1" File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v Line: 369
 Info (12128): Elaborating entity "pipe" for hierarchy "pipe:MEM_WB2" File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v Line: 387
 Info (12128): Elaborating entity "mux3to1" for hierarchy "mux3to1:WBMux1" File: C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/processor.v Line: 394
 Info (144001): Generated suppressed messages file C:/Users/Ahmad/Desktop/github/JoSDC/Innovation Phase/SuperScalar/output_files/SuperScalar.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Sat Feb 22 19:23:46 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Sat Feb 22 22:36:23 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +--------------------------------------------+
