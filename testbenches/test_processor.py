@@ -1,6 +1,6 @@
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import RisingEdge, Timer
+from cocotb.triggers import RisingEdge, FallingEdge, Timer
 import ctypes
 
 def to_signed_16bit(value):
@@ -60,19 +60,19 @@ async def processor_test(dut):
     """Testbench for the processor module."""
     
     # Clock with a period of 10 ns (100 MHz)
-    clock = Clock(dut.clk, 10, units="ns")
-    cocotb.start_soon(clock.start())
-
     dut.enable.value = 1
     dut.rst.value = 0
-    await Timer(1, units="ns")  
-    cocotb.log.warning(f"rst asserted, PCin Value = {int(dut.pc.PCin.value)}")
-    cocotb.log.warning(f"rst asserted, PCout Value = {int(dut.pc.PCout.value)}")
-    await Timer(3, units="ns")  
+    dut.clk.value = 0
+    
+    await Timer(1, units="ns")
+    dut.enable.value = 1
+    
+    await Timer(3, units="ns")
     dut.rst.value = 1
     
-    await RisingEdge(dut.clk)
-    await Timer(1, units="ns")
+    await Timer(1, units="ns")  
+    clock = Clock(dut.clk, 10, units="ns")
+    cocotb.start_soon(clock.start())
 
     nop_count = 0
     max_nops = 5  # Number of consecutive NOPs to detect program end
@@ -82,21 +82,23 @@ async def processor_test(dut):
 
     cycle = 0
     while True:
-        registers = to_int(dut.RegFile.registers.value)
-        register_values = " | ".join(f"R{i}: {reg}" for i, reg in enumerate(registers))
-        dm_values = to_int(dut.DM.altsyncram_component.m_default.altsyncram_inst.mem_data.value)
         await RisingEdge(dut.clk)
         await Timer(1, units="ns")
-        total_cycles = cycle - max_nops + 1
-        instr1 = dut.instMem.q_a.value.integer
-        instr2 = dut.instMem.q_b.value.integer
         cocotb.log.warning(f"CYCLE_START")
         cocotb.log.warning(f"Cycle {cycle}: PC={int(dut.PC.value)}")
+        total_cycles = cycle - max_nops + 1
+        instr1 = dut.instMem.q_a.value
+        instr2 = dut.instMem.q_b.value
+        await FallingEdge(dut.clk)
+        await Timer(1, units="ns")
+        registers = to_int(dut.RegFile.registers.value)
+        dm_values = to_int(dut.DM.altsyncram_component.m_default.altsyncram_inst.mem_data.value)
         cocotb.log.warning(f"Instruction1(Fetch)={hex(instr1)} ({decode_instruction(instr1)})")
         cocotb.log.warning(f"Instruction2(Fetch)={hex(instr2)} ({decode_instruction(instr2)})")
-        cocotb.log.warning(f"RF: {registers}")
-        cocotb.log.warning(f"DM: {dm_values}")
+        cocotb.log.warning(f"RF: {to_int(registers)}")
+        cocotb.log.warning(f"DM: {to_int(dm_values[0:50])}")
         cocotb.log.warning(f"CYCLE_END")
+        
 
         # Count non-NOP instructions
         if instr1 != 0x00000000:

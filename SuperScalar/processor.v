@@ -63,7 +63,7 @@ wire [4:0] writeRegister1M, writeRegister2M, rs2M, rt2M;
 //WRITEBACK WIRES
 wire RegWriteEn1W, RegWriteEn2W, instMemPred;
 wire [1:0] MemToReg1W, MemToReg2W;
-wire [8:0] PCPlus2W;
+wire [8:0] PCPlus2W, PCPlus1W;
 wire [31:0] ALUResult1W, ALUResult2W;
 wire [31:0] memoryReadData1W, memoryReadData2W;
 wire [4:0] writeRegister1W, writeRegister2W;
@@ -179,12 +179,13 @@ adder #(9) pcAdder2(.in1(PC), .in2(9'd1), .out(PCPlus1));
 mux2x1En #(9) instMemMux(.in1(nextPCP1), .in2(instMemTarget), .s(instMemPred),.en(EnablePCIFID), .out(instMemMuxOut));
 
 dual_issue_inst_mem instMem(.address_a(nextPC),
-							.address_b(instMemMuxOut),
-							.addressstall_a(~EnablePCIFID),
-							.addressstall_b(~EnablePCIFID),
-							.clock(clk),
-							.q_a(instr1),
-							.q_b(instr2));
+                            .address_b(instMemMuxOut),
+                            .addressstall_a(~EnablePCIFID),
+                            .addressstall_b(~EnablePCIFID),
+                            .clock(clk),
+                            .enable(EnablePCIFID),
+                            .q_a(instr1),
+                            .q_b(instr2));
 
 adder #(9) branchAdder1(.in1(PCPlus1), .in2(instr1[8:0]), .out(branchAdderResult1));
 adder #(9) branchAdder2(.in1(PCPlus2), .in2(instr2[8:0]), .out(branchAdderResult2));
@@ -318,14 +319,13 @@ pipe #(155) EX_MEM_2(
 
 
 /* ********************************************** MEMORY STAGE ******************************************* */
-
-ComparatorIP comp1(.dataa(ForwardBMuxOut1M),.datab(ForwardAMuxOut1M),.aeb(zero1));
+Comparator #(32) comp1(.equal(zero1), .a(ForwardBMuxOut1M), .b(ForwardAMuxOut1M));
 XNORGate branchXnor1(.out(xnorOut1), .in1(bit26_1M), .in2(~zero1));
 ANDGate branchAnd1(.in1(xnorOut1), .in2(Branch1M), .out(branch_taken1));
 
 mux2x1 #(32) comp2MuxA (.in1(ForwardAMuxOut2M), .in2(ALUResult1M), .s(ForwardBranchA), .out(comp2MuxAout));
 mux2x1 #(32) comp2MuxB (.in1(ForwardBMuxOut2M), .in2(ALUResult1M), .s(ForwardBranchB), .out(comp2MuxBout));
-ComparatorIP comp2(.dataa(comp2MuxAout),.datab(comp2MuxBout),.aeb(zero2));
+Comparator #(32) comp2(.equal(zero2), .a(comp2MuxAout), .b(comp2MuxBout));
 XNORGate branchXnor2(.out(xnorOut2), .in1(bit26_2M), .in2(~zero2));
 ANDGate branchAnd2(.in1(xnorOut2), .in2(Branch2M), .out(branch_taken2)); 
 
@@ -377,7 +377,6 @@ pipe #(72) MEM_WB2(
     }),
     .Q({
         RegWriteEn2W, MemToReg2W, 
-    
         ALUResult2W, 
         memoryReadData2W, 
         writeRegister2W
@@ -391,17 +390,24 @@ pipe #(72) MEM_WB2(
 
 /* ********************************************** WRITE BACK STAGE ******************************************* */
 
+
 // Write-back for Instruction 1
-assign writeData1 = (MemToReg1W == 2'b00) ? ALUResult1W : 
-                    (MemToReg1W == 2'b01) ? memoryReadData1W : 
-                    (MemToReg1W == 2'b10) ? {{21{1'b0}}, PCPlus2W-11'd1} : 
-                    32'b0;
+mux3to1 #(32) WBMux1(.in1(ALUResult1W), .in2(memoryReadData1W), .in3({{23{1'b0}}, PCPlus2W-9'd1}), .s(MemToReg1W), .out(writeData1));
+
+
+//assign writeData1 = (MemToReg1W == 2'b00) ? ALUResult1W : 
+//                    (MemToReg1W == 2'b01) ? memoryReadData1W : 
+//                    (MemToReg1W == 2'b10) ? {{21{1'b0}}, PCPlus2W-9'd1} : 
+//                    32'b0;
 
 // Write-back for Instruction 2
-assign writeData2 = (MemToReg2W == 2'b00) ? ALUResult2W : 
-                    (MemToReg2W == 2'b01) ? memoryReadData2W : 
-                    (MemToReg2W == 2'b10) ? {{21{1'b0}}, PCPlus2W} : 
-                    32'b0;
+mux3to1 #(32) WBMux2(.in1(ALUResult2W), .in2(memoryReadData2W), .in3({{23{1'b0}}, PCPlus2W}), .s(MemToReg2W), .out(writeData2));
+
+
+//assign writeData2 = (MemToReg2W == 2'b00) ? ALUResult2W : 
+//                    (MemToReg2W == 2'b01) ? memoryReadData2W : 
+//                    (MemToReg2W == 2'b10) ? {{21{1'b0}}, PCPlus2W} : 
+//                    32'b0;
 
 
 
